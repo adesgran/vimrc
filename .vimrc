@@ -25,16 +25,19 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 " Hardcore mode
-nnoremap <Left> :echo "No left for you!"<CR>
-vnoremap <Left> :<C-u>echo "No left for you!"<CR>
-inoremap <Left> <C-o>:echo "No left for you!"<CR>
-nnoremap <Right> :echo "No left for you!"<CR>
-vnoremap <Right> :<C-u>echo "No left for you!"<CR>
-inoremap <Right> <C-o>:echo "No left for you!"<CR>
-nnoremap <Up> :echo "No left for you!"<CR>
-vnoremap <Up> :<C-u>echo "No left for you!"<CR>
-inoremap <Up> <C-o>:echo "No left for you!"<CR>
-nnoremap <Down> :echo "No left for you!"<CR>
-vnoremap <Down> :<C-u>echo "No left for you!"<CR>
-inoremap <Down> <C-o>:echo "No left for you!"<CR>
+function! EnableHardcore(...)
+	nnoremap <Left> :echo "No left for you!"<CR>
+	vnoremap <Left> :<C-u>echo "No left for you!"<CR>
+	inoremap <Left> <C-o>:echo "No left for you!"<CR>
+	nnoremap <Right> :echo "No left for you!"<CR>
+	vnoremap <Right> :<C-u>echo "No left for you!"<CR>
+	inoremap <Right> <C-o>:echo "No left for you!"<CR>
+	nnoremap <Up> :echo "No left for you!"<CR>
+	vnoremap <Up> :<C-u>echo "No left for you!"<CR>
+	inoremap <Up> <C-o>:echo "No left for you!"<CR>
+	nnoremap <Down> :echo "No left for you!"<CR>
+	vnoremap <Down> :<C-u>echo "No left for you!"<CR>
+	inoremap <Down> <C-o>:echo "No left for you!"<CR>
+endfunction
+autocmd VimEnter * call EnableHardcore()
 au VimEnter 'clear Lock' -e 'keycode 0x42 = Escape'
