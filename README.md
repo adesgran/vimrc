@@ -7,4 +7,4 @@ Then, open vim and type ``` :PlugInstall ```
 
 For the theme, type ``` :AirlineTheme bubblegum ```
 
-If you wan't use Arrows on your keyboard, comment lines under ``` 27\" Hardcore mode ```
+If you wan't use Arrows on your keyboard, comment line ``` 42\ autocmd VimEnter * call EnableHardcore() ```
