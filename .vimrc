@@ -66,6 +66,6 @@ autocmd VimEnter * call EnableHardcore()
 au VimEnter 'clear Lock' -e 'keycode 0x42 = Escape'
 
 " Shortcuts for Fugitive (GIT)
-nnoremap gp :Git push<CR>
-nnoremap ga :Git add %<CR>
-nnoremap gc :Git commit<CR>
+nnoremap <leader>gp :Git push<CR>
+nnoremap <leader>ga :Git add %<CR>
+nnoremap <leader>gc :Git commit<CR>
