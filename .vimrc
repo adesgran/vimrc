@@ -24,6 +24,7 @@ Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/skywind3000/asyncrun.vim'
 Plug 'https://github.com/preservim/nerdcommenter'
+Plug 'https://github.com/tmhedberg/simpylfold'
 call plug#end()
 
 " Vim AirLine Config
@@ -46,6 +47,16 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 nnoremap <silent> <leader>c} V}:call NERDComment('x', 'toggle')<CR>
 nnoremap <silent> <leader>c{ V{:call NERDComment('x', 'toggle')<CR>
+
+" SimplyFold Config
+set foldmethod=indent
+let g:SimpylFold_docstring_preview = 0
+let g:SimpylFold_fold_docstring = 1
+let b:SimpylFold_fold_docstring = 1
+let g:SimpylFold_fold_import = 1
+let b:SimpylFold_fold_import = 1
+let g:SimpylFold_fold_blank = 0
+let b:SimpylFold_fold_blank = 0
 
 " Hardcore mode
 function! EnableHardcore(...)
