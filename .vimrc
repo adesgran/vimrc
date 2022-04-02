@@ -87,4 +87,8 @@ nnoremap <leader>k gg
 nnoremap <leader>j G
 nnoremap <leader>h 0
 
+" Fold Shortcuts
+nnoremap <leader>zo zR
+nnoremap <leader>zc zM
+
 au BufRead,BufNewFile .mybash set filetype=bash
