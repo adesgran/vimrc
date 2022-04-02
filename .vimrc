@@ -80,3 +80,11 @@ au VimEnter 'clear Lock' -e 'keycode 0x42 = Escape'
 nnoremap <leader>gp :Git push<CR>
 nnoremap <leader>ga :Git add %<CR>
 nnoremap <leader>gc :Git commit<CR>
+
+" Personnals Shortcuts
+nnoremap <leader>l $
+nnoremap <leader>k gg
+nnoremap <leader>j G
+nnoremap <leader>h 0
+
+au BufRead,BufNewFile .mybash set filetype=bash
