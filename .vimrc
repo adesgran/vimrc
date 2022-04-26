@@ -33,6 +33,7 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline_theme='bubblegum'
 
 " NerdCommenter Config
@@ -90,5 +91,17 @@ nnoremap <leader>h 0
 " Fold Shortcuts
 nnoremap <leader>zo zR
 nnoremap <leader>zc zM
+
+" Buffer Selector
+
+nmap <leader>b1 <Plug>AirlineSelectTab1
+nmap <leader>b2 <Plug>AirlineSelectTab2
+nmap <leader>b3 <Plug>AirlineSelectTab3
+nmap <leader>b4 <Plug>AirlineSelectTab4
+nmap <leader>b5 <Plug>AirlineSelectTab5
+nmap <leader>b6 <Plug>AirlineSelectTab6
+nmap <leader>b7 <Plug>AirlineSelectTab7
+nmap <leader>b8 <Plug>AirlineSelectTab8
+nmap <leader>b9 <Plug>AirlineSelectTab9
 
 au BufRead,BufNewFile .mybash set filetype=bash
